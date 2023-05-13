@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding and browser compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets the viewport for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked to the stylesheet for the stopwatch UI -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Sets the title of the page -->
+    <title>Stopwatch</title>
+</head>
+<body>
+    <!-- Created a container for the stopwatch UI background -->
+    <div class="container">
+        <!-- Created the stopwatch display with placeholders for the time values -->
+        <div class="stopwatch">
+            <p class="display">
+              <span class="tile">
+                <span id="hr" class="digit">00</span>
+                <span class="txt">Hr</span>
+              </span>
+              <span class="tile">
+                <span id="min" class="digit">00</span>
+                <span class="txt">Min</span>
+              </span>
+              <span class="tile">
+                <span id="sec" class="digit">00</span>
+                <span class="txt">Sec</span>
+              </span>
+              <span class="tile" style="margin-right: 0%;">
+                <span id="count" class="digit">00</span>
+                <span class="txt">Ms</span>
+              </span>
+            </p>
+            <!-- Added buttons to start, stop and reset the stopwatch -->
+            <button id="startStop" class="btn">START</button>
+            <button id="reset" class="btn">RESET</button>
+        </div>
+    </div>
+
+    <!-- Linked to the script file for the stopwatch functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

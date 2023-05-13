@@ -1,0 +1,87 @@
+/* Resets all margin and padding to 0 */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Sets the container for the stopwatch */
+.container{
+    position: relative;
+    background: linear-gradient(to right top,#EA8D8D , #A890FE);
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Styles the stopwatch container */
+.stopwatch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    min-width: 250px;
+    max-width: 500px;
+    height: 20vh;
+    text-align: center;
+}
+
+/* Styles the display area of the stopwatch */
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styles the digits displayed in the stopwatch */
+.digit{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+}
+
+/* Styles the text displayed in the stopwatch */
+.txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline;
+    color: white;
+}
+
+/* Styles each tile (container for a digit and its corresponding text) */
+.tile{
+    margin-right: 2vw;
+}
+
+/* Styles the buttons */
+.btn{
+    font-size: 1.5rem;
+    margin-top: 4%;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    width: 18vh;
+    min-width: 100px;
+    color: white;
+}
+#startStop{
+    background-color: green;
+}
+#startStop:hover{
+    border: 1.5px solid white;
+}
+
+#reset{ 
+    background-color: darkblue;
+}
+#reset:hover{
+    border: 1.5px solid white;
+}
