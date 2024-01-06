@@ -28,7 +28,9 @@ class Timer {
     start() {
       this.isRunning = true;
       this.buttonStartStop.textContent = "STOP";
-      this.buttonStartStop.style.backgroundColor = "red";
+      this.buttonStartStop.style.backgroundColor = "black";
+      this.buttonStartStop.style.color = "white";
+      this.buttonStartStop.style.borderColor = "white";
       clearInterval(this.interval);
       this.interval = setInterval(this.startTimer.bind(this), 10);
     }
@@ -37,7 +39,9 @@ class Timer {
     stop() {
       this.isRunning = false;
       this.buttonStartStop.textContent = "START";
-      this.buttonStartStop.style.backgroundColor = "green";
+      this.buttonStartStop.style.backgroundColor = "white";
+      this.buttonStartStop.style.color = "black";
+      this.buttonStartStop.style.borderColor = "black";
       clearInterval(this.interval);
     }
     

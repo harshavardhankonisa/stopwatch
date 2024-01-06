@@ -7,7 +7,7 @@
 /* Sets the container for the stopwatch */
 .container{
     position: relative;
-    background: linear-gradient(to right top,#EA8D8D , #A890FE);
+    background-color: black;
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -70,17 +70,16 @@
     padding: 10px;
     width: 18vh;
     min-width: 100px;
-    color: white;
 }
 #startStop{
-    background-color: green;
+    background-color: white;
 }
 #startStop:hover{
     border: 1.5px solid white;
 }
 
 #reset{ 
-    background-color: darkblue;
+    background-color: white;
 }
 #reset:hover{
     border: 1.5px solid white;
